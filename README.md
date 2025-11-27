@@ -153,7 +153,7 @@ Images are 1-channel grayscale OCT B-scans.
 ## ▶️ How to Run
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone [https://github.com/nazish00/DeepLearningProject.git](https://github.com/nazish00/DeepLearningProject.git)
+cd DeepLearningProject
 pip install -r requirements.txt
 jupyter notebook
