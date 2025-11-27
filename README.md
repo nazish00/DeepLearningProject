@@ -1,18 +1,3 @@
-# 🩺 OCT Retinal Disease Classification — Deep Learning Project
-
-This repository contains a complete deep-learning pipeline for classifying retinal diseases using OCT (Optical Coherence Tomography) images.  
-Multiple CNN architectures are implemented, compared, improved, and finally optimized into a lightweight **SE-CNN model** designed specifically for OCT images.
-
-The work is based on the OCT2017 dataset and includes preprocessing, augmentation, training, evaluation, explainability, calibration, and performance benchmarking.
-
----
-
-## 📁 Repository Contents
-
-Below is a description of each notebook in this repository.
-
----
-
 ### **1. InceptionV3 Model.ipynb**  
 This notebook implements **InceptionV3** using ImageNet pretrained weights.  
 It includes:
@@ -24,8 +9,8 @@ It includes:
 - Confusion matrix, ROC, PR curves  
 
 **Performance:**  
-- Train Accuracy: **XX%**  
-- Test Accuracy: **YY%**
+- Train Accuracy: ≈ **99.1%**  
+- Test Accuracy: ≈ **99.1%**  
 
 ---
 
@@ -39,8 +24,8 @@ Includes:
 - Full evaluation metrics  
 
 **Performance:**  
-- Train Accuracy: **XX%**  
-- Test Accuracy: **YY%**
+- Train Accuracy: ≈ **90.6%**  
+- Test Accuracy: **N/A** (test set evaluation not run in this notebook)  
 
 ---
 
@@ -54,8 +39,8 @@ Includes:
 - Test evaluation with confusion matrix  
 
 **Performance:**  
-- Train Accuracy: **XX%**  
-- Test Accuracy: **YY%**
+- Train Accuracy: ≈ **83.9%**  
+- Test Accuracy: ≈ **91.4%**  
 
 This notebook serves as the **baseline prototype** from which improved architectures were developed.
 
@@ -75,8 +60,8 @@ This notebook contains:
 - Better convergence & performance  
 
 **Performance:**  
-- Improved CNN — Train: **XX%**, Test: **YY%**  
-- InceptionV3 — Train: **XX%**, Test: **YY%**
+- Improved CNN — Train: ≈ **84.4%**, Test: ≈ **96.5%**  
+- InceptionV3 — Train: ≈ **98.5%**, Test: ≈ **98.1%**  
 
 ---
 
@@ -101,8 +86,8 @@ Includes:
 - Final comparison table  
 
 **Performance (SE-CNN):**  
-- Train Accuracy: **XX%**  
-- Test Accuracy: **YY%**  
+- Train Accuracy: ≈ **93.5%**  
+- Test Accuracy: ≈ **99.7%**  
 - Parameters: **0.30M**  
 - AUC: **1.000**  
 - ECE: **0.043**  
@@ -114,46 +99,8 @@ Includes:
 
 | Model                     | Train Acc | Test Acc | Parameters | Pretrained | Notes |
 |--------------------------|-----------|----------|------------|-----------|-------|
-| Early Custom CNN         | XX%       | YY%      | 0.26M      | No        | Prototype baseline |
-| Improved Custom CNN      | XX%       | YY%      | ~0.30M     | No        | Stronger baseline |
-| InceptionV3              | XX%       | YY%      | 21.8M      | Yes       | Two-stage fine-tuning |
-| Inception-ResNet-V2      | XX%       | YY%      | ~55M       | Yes       | Very deep pretrained model |
-| **Final SE-CNN (Ours)**  | **XX%**   | **YY%**  | **0.30M**  | **No**    | **Best performance, fastest, small size** |
-
----
-
-## 🧪 Dataset  
-We use the **OCT2017** dataset containing 4 classes:
-
-- CNV  
-- DME  
-- DRUSEN  
-- NORMAL  
-
-Images are 1-channel grayscale OCT B-scans.
-
----
-
-## 📈 Features of This Project
-
-- Custom CNN models  
-- Pretrained InceptionV3 and Inception-ResNet-V2  
-- Final optimized SE-CNN  
-- Training/validation curves  
-- Confusion matrices  
-- ROC & PR curves  
-- Calibration plots  
-- Grad-CAM explainability  
-- t-SNE feature visualization  
-- High-speed inference testing  
-- Clean comparison between all models  
-
----
-
-## ▶️ How to Run
-
-```bash
-git clone [https://github.com/nazish00/DeepLearningProject.git](https://github.com/nazish00/DeepLearningProject.git)
-cd DeepLearningProject
-pip install -r requirements.txt
-jupyter notebook
+| Early Custom CNN         | ≈83.9%    | ≈91.4%   | 0.26M      | No        | Prototype baseline |
+| Improved Custom CNN      | ≈84.4%    | ≈96.5%   | ~0.30M     | No        | Stronger baseline |
+| InceptionV3              | ≈99.1%    | ≈99.1%   | 21.8M      | Yes       | Two-stage fine-tuning |
+| Inception-ResNet-V2      | ≈90.6%    | N/A      | ~55M       | Yes       | Very deep pretrained model (no test eval) |
+| **Final SE-CNN (Ours)**  | **≈93.5%**| **≈99.7%**| **0.30M** | **No**    | **Best performance, fastest, small size** |
