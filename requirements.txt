@@ -1,0 +1,24 @@
+# requirements.txt
+
+# Core deep learning
+tensorflow>=2.10,<3.0
+
+# Numerics & data handling
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+
+# Metrics, t-SNE, etc.
+scikit-learn>=1.2
+
+# Plotting & visualization
+matplotlib>=3.6
+seaborn>=0.12
+
+# Image handling
+Pillow>=9.3
+
+# Notebook environment & utilities
+jupyterlab>=3.5
+ipykernel>=6.19
+tqdm>=4.64
