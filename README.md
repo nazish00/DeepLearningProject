@@ -267,4 +267,5 @@ For the complete implementation, see **demo.py** in the project root.
 
 ## References
 
-1. See the full report with figures & tables: `report/Project_report7.pdf`
+1. See the full report with figures & tables: [report/Project_report7.pdf](report/Project_report7.pdf)
+
