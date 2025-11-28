@@ -300,5 +300,6 @@ python demo.py --model result/se_cnn/best_model.keras --dir path/to/folder/
 
 ## References
 
-1. See the full report with figures & tables: `report/Project_report7.pdf`
+1. See the full report with figures & tables: [Project_report7.pdf](report/Project_report7.pdf)
+
 
